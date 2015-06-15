@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('action_object_object_id', models.CharField(max_length=255, blank=True, null=True, db_index=True, help_text='')),
                 ('timestamp', models.DateTimeField(db_index=True, default=django.utils.timezone.now, help_text='')),
                 ('public', models.BooleanField(db_index=True, default=True, help_text='')),
-                ('data', DataField(blank=True, null=True, help_text='')),
+                #('data', DataField(blank=True, null=True, help_text='')),
                 ('action_object_content_type', models.ForeignKey(blank=True, null=True, help_text='', related_name='action_object', to='contenttypes.ContentType')),
                 ('actor_content_type', models.ForeignKey(help_text='', related_name='actor', to='contenttypes.ContentType')),
                 ('target_content_type', models.ForeignKey(blank=True, null=True, help_text='', related_name='target', to='contenttypes.ContentType')),
